@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/build/tailwind.css">
+    <title>Interactive Price Toggle</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        /* Toggle A */
+        input:checked ~ .dot {
+            transform: translateX(100%);
+            background-color: white;
+        }
+
+        /* Toggle B */
+        input:checked ~ .dot {
+            transform: translateX(100%);
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="h-screen w-full flex justify-center bg-veryLightBlue font-Montserrat bg-no-repeat bg-left-bottom" style="background-image: url(./images/bg-bottom.svg)">
+<div>
+    
+</div>
+    <div class="max-w-lg lg:max-w-full bg-no-repeat w-full bg-right-top" style="background-image: url(./images/bg-top.svg)">
+        <div class="pt-12">
+            <div class="text-center">
+                <div>
+                    <h1 class="text-darkBlue text-4xl font-bold">Our Pricing</h1>
+                </div>
+    
+                <div class="flex justify-center rounded-lg pt-8">
+                    <div class="pt-2">
+                        <p class="px-6 text-lightBlue font-bold text-xs">Annualy</p>
+                    </div>
+                    
+                    <div class="flex items-center justify-center mb-8">
+                        <label for="toggleB" class="flex items-center cursor-pointer">
+                          <!-- toggle -->
+                          <div class="relative">
+                            <!-- input -->
+                            <input type="checkbox" id="toggleB" class="sr-only" checked >
+                            <!-- line -->
+                            <div class="block bg-gradient-to-r from-gradFirst to-gradSecond w-14 h-8 rounded-full"></div>
+                            <!-- dot -->
+                            <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                          </div>
+                        </label>
+                    </div>
+    
+                    <div class="pt-2">
+                        <p class="px-6 text-lightBlue font-bold text-xs">Monthly</p>
+                    </div>
+                </div>
+    
+            </div>
+            
+            <!-- CARDS -->
+            <div class="text-center lg:grid lg:grid-cols-3 gap-0 lg:p-12 drop-shadow-lg">
+                <div class="p-6 rounded-lg m-8 lg:m-0 bg-white lg:mt-4 lg:mb-4">
+                    <h2 class="text-gBlue font-bold p-2">Basic</h2>
+                    <div class="text-darkBlue flex items-center justify-center text-6xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span id="price">19.99</span></div>
+                    <hr>
+                    <div class="text-gray-500 mb-6">
+                        <p class="text-xs p-3 font-bold">500 GB Storage</p>
+                        <hr>
+                        <p class="text-xs p-3 font-bold">2 Users Allowed</p>
+                        <hr>
+                        <p class="text-xs p-3 font-bold">Send up to 3 GB</p>
+                        <hr>
+                    </div>
+                    <button class="hover:from-white hover:to-white hover:text-gradSecond hover:border border-gradSecond text-xs rounded-lg py-3 px-20 bg-gradient-to-r from-gradFirst to-gradSecond text-white font-bold">LEARN MORE</button>
+                </div>
+                <div class="text-white p-6 rounded-lg m-8 lg:m-0 lg:pt-10 bg-gradient-to-r from-gradFirst to-gradSecond">
+                    <h2 class="font-bold p-2">Professional</h2>
+                    <div class="flex items-center justify-center text-6xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span id="price">24.99</span></div>
+                    <hr>
+                    <div class="mb-6">
+                        <p class="text-xs p-3 font-bold">1 TB Storage</p>
+                        <hr>
+                        <p class="text-xs p-3 font-bold">5 Users Allowed</p>
+                        <hr>
+                        <p class="text-xs p-3 font-bold">Send up to 10 GB</p>
+                        <hr>
+                    </div>
+                    <button class="hover:border hover:bg-gradSecond hover:text-white border-gradSecond hover:border-white text-xs rounded-lg py-3 px-20 bg-white text-gradSecond font-bold">LEARN MORE</button>
+                </div>
+                <div class="p-6 rounded-lg m-8 lg:m-0 lg:mt-4 lg:mb-4 bg-white ">
+                    <h2 class="text-gBlue font-bold p-2">Master</h2>
+                    <div class="text-darkBlue flex items-center justify-center text-6xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span id="price">39.99</span></div>
+                    <hr>
+                    <div class="text-gray-500 mb-6">
+                        <p class="text-xs p-3 font-bold">2 TB Storage</p>
+                        <hr>
+                        <p class="text-xs p-3 font-bold">10 Users Allowed</p>
+                        <hr>
+                        <p class="text-xs p-3 font-bold">Send up to 20 GB</p>
+                        <hr>
+                    </div>
+                    <button class="hover:from-white hover:to-white hover:text-gradSecond border-gradSecond  hover:border text-xs rounded-lg py-3 px-20 bg-gradient-to-r from-gradFirst to-gradSecond text-white font-bold">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
