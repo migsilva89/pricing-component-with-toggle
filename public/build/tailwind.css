@@ -556,12 +556,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-.pt-28 {
-  padding-top: 7rem;
+.pt-24 {
+  padding-top: 6rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -684,8 +684,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:p-12 {
-    padding: 3rem;
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 
   .lg\:pt-10 {
