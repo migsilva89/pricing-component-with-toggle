@@ -3,7 +3,7 @@ let toggle = document.getElementById("toggleB")
 // toggle.checked = false
 
 toggle.addEventListener("click", function(){
-let prices = document.querySelectorAll("#price")
+let prices = document.querySelectorAll(".price")
 
     switch (toggle.checked){
         case true:

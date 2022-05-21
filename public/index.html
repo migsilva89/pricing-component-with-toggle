@@ -22,11 +22,11 @@
     </style>
 </head>
 <body class="h-screen w-full flex justify-center bg-veryLightBlue font-Montserrat bg-no-repeat bg-left-bottom" style="background-image: url(./images/bg-bottom.svg)">
-    <div class="max-w-lg lg:max-w-full bg-no-repeat w-full bg-right-top" style="background-image: url(./images/bg-top.svg)">
+    <main class="max-w-lg lg:max-w-full bg-no-repeat w-full bg-right-top" style="background-image: url(./images/bg-top.svg)">
         <div class="pt-28 mx-28">
             <div class="text-center">
                 <div>
-                    <h1 class="text-darkBlue text-4xl font-bold">Our Pricing</h1>
+                    <h1 class="text-darkBlue text-5xl font-bold">Our Pricing</h1>
                 </div>
     
                 <div class="flex justify-center rounded-lg pt-8">
@@ -39,7 +39,9 @@
                           <!-- toggle -->
                           <div class="relative">
                             <!-- input -->
-                            <input type="checkbox" id="toggleB" class="sr-only" checked >
+                            <label for="checkbox">
+                                <input type="checkbox" id="toggleB" class="sr-only" checked >
+                            </label>
                             <!-- line -->
                             <div class="block bg-gradient-to-r from-gradFirst to-gradSecond w-14 h-8 rounded-full"></div>
                             <!-- dot -->
@@ -59,7 +61,7 @@
             <div class="text-center lg:grid lg:grid-cols-3 gap-0 lg:p-12 drop-shadow-lg">
                 <div class="p-6 rounded-lg m-8 lg:m-0 bg-white lg:mt-4 lg:mb-4">
                     <h2 class="text-gBlue font-bold p-2">Basic</h2>
-                    <div class="text-darkBlue flex items-center justify-center text-6xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span id="price">19.99</span></div>
+                    <div class="text-darkBlue flex items-center justify-center text-7xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span class="price">19.99</span></div>
                     <hr>
                     <div class="text-gray-500 mb-6">
                         <p class="text-xs p-4 font-bold">500 GB Storage</p>
@@ -73,7 +75,7 @@
                 </div>
                 <div class="text-white p-6 rounded-lg m-8 lg:m-0 lg:pt-10 bg-gradient-to-r from-gradFirst to-gradSecond">
                     <h2 class="font-bold p-2">Professional</h2>
-                    <div class="flex items-center justify-center text-6xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span id="price">24.99</span></div>
+                    <div class="flex items-center justify-center text-7xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span class="price">24.99</span></div>
                     <hr>
                     <div class="mb-6">
                         <p class="text-xs p-4 font-bold">1 TB Storage</p>
@@ -87,7 +89,7 @@
                 </div>
                 <div class="p-6 rounded-lg m-8 lg:m-0 lg:mt-4 lg:mb-4 bg-white ">
                     <h2 class="text-gBlue font-bold p-2">Master</h2>
-                    <div class="text-darkBlue flex items-center justify-center text-6xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span id="price">39.99</span></div>
+                    <div class="text-darkBlue flex items-center justify-center text-7xl pb-6 font-bold p-2"><span class="text-4xl">$</span><span class="price">39.99</span></div>
                     <hr>
                     <div class="text-gray-500 mb-6">
                         <p class="text-xs p-4 font-bold">2 TB Storage</p>
@@ -101,7 +103,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
 <script src="index.js"></script>
 
