@@ -4,7 +4,7 @@ let toggle = document.getElementById("toggleB")
 
 toggle.addEventListener("click", function(){
 let prices = document.querySelectorAll(".price")
-
+console.log("aqui")
     switch (toggle.checked){
         case true:
             prices[0].innerHTML = "19.99"
